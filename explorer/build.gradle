@@ -48,6 +48,9 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     testCompile group: 'junit', name: 'junit', version: '4.11'
+    
+    compile files('referencedLibraries/digital-trade-chain-0.1')
+    runtime fileTree(dir: 'referencedLibraries', include: '*.jar')
 
     // TornadoFX: A lightweight Kotlin framework for working with JavaFX UI's.
     compile 'no.tornado:tornadofx:1.5.9'
